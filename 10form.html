@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form action="/submit">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="pass">password</label><br>
+        <input type="password" id="pass"><br>
+        <input type="submit">
+        <input type="reset" value="reset"><br><br>
+        <label for="date of birth">Date of Birth</label><br>
+        <input for="Date of Birth" id="date of birth"><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email"><br><br>
+        <label for="quantity">No of Person</label><br>
+        <input type="number" id="quantity" min="1" max="100"><br><br>
+        <label for="vol" >No of days attended(0-30)</label><br>
+        <input type="range" id="vol" min="0" max="30"><br><br>
+        <label for="tel">Enter Phone Number</label><br>
+        <input type="number" id="phone" placeholder="123-45-678" pattern="[9,1]{2}-[0-9]{4}-[0-9]{6}"required><br><br>
+        <small>Format: 123-45-678</small><br><br>
+        <label for="week">Current week</label><br>
+        <input type="week" id="week" name="week"><br><br>
+        <label for="I have trust in this site">I have trust in this site</label>
+        <input type="checkbox" id="checkbox"><br>
+        <input type="submit" value="submit">
+        </form>
+</body>
+</html>
