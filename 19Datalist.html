@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Global Electronics Store</h1>
+    <h2>We Value Your Feedback</h2>
+    <a href="#ff">Feddback Form | </a> <a href="#faq"> FAQ | </a> <a href="#sl">Store Location | </a> <a href="#ci">Contact Info</a>
+    <hr>
+    <marquee tag>🎉 Special Offer: 20% off all electronics this weekend! | 📞 Need help? Call our support line: 1-800-123-HELP | 🚚 Free shipping on orders over $50</marquee>
+    <hr>
+
+    <h2 id="ff">Customer Feedback Form</h2>
+
+    <p>Please help us improve our services by providing your feedback below:</p><br>
+    
+    <fieldset>
+        <legend>Personal Information</legend><br>
+        <tabel border="0" width="100%">
+        <form action="/submit" method="post">
+            
+            <tr>
+            <td><label for="Full Name">Full Name:</label></td>
+            <td><input type="text" id="Full Name"></td>
+            </tr><br>
+            <tr>
+            <td><label for="Email Adress">Email Adress:</label></td>
+            <td><input type="email" id="Email Adress"></td>
+            </tr><br><br>
+            <tr>
+            <td><label for="tel">Phone Number:</label></td>
+            <td><input type="number" id="phone" placeholder="123-45-678" pattern="[9,1]{2}-[0-9]{4}-[0-9]{6}"required></td>
+            </tr><br><br>
+            <tr>
+            <td><label for="customer type">Customer Type:</label></td>
+            <td><select id="Please Select">
+                <option value="New Customer">New Customer</option>
+                <option value="Returning Customer">Returning Customer</option>
+                <option value="Frequent Customer">Frequent Customer</option>
+            </select>
+            </td>
+            </tr>
+        
+        </form>
+        </tabel>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Your Feedback</legend><br>
+            <tabel border="0" width="100%">
+            <form action="/submit" method="post">
+                
+                <p1>How did you bear about us?</p1><br>
+                <input type="radio" id="Social Media">
+                <label for="Social Media">Social Media</label><br>
+                <input type="radio" id="Friend Family">
+                <label for="Friend Family">Friend Family</label><br>
+                <input type="radio" id="Search Engine">
+                <label for="Search Engine">Search Engine</label><br>
+                <input type="radio" id="other">
+                <label for="other">other</label><br><br>
+
+                <p1>Rate your experience</p1>
+                <input type="radio" id="Excellent">
+                <label for="Excellent">Excellent</label>
+                <input type="radio" id="Good">
+                <label for="Good">Good</label>
+                <input type="radio" id="Average">
+                <label for="Average">Average</label>
+                <input type="radio" id="Poor">
+                <label for="Poor">Poor</label><br><br>
+                
+                <p1>feedback Category</p1>
+                <select id="Please Select">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br><br>
+             
+            <label for="comment">Comments:</label>
+            <textarea id="Comment" name="comment" rows="4" cis="50" placeholder="Please Share Your feedbackn here "></textarea><br>
+            
+            <p>Would you recommend us?</p>
+            <input type="checkbox" id="Would you recommend us?" name="checkbox" value="Yes,I would recommend to others">
+            <label for="checkbox">Yes,I could recommend to us</label><br><br>
+            
+            <input type="submit" value="submit Feedback">
+            <input type="submit" value="clear Form">
+
+             </form>
+
+        </fieldset>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        
+        <ul>
+            <h3><li>How long does delivery take?</li></h3></ul>
+        <ul>
+            <li>Standard delivery 3-5 business days</li>
+            <li>Express delivery 1-2 business days</li>
+        
+        </ul>
+        
+        
+
+        <ul>
+            <li><h3>What is your return policy?</h3></li>
+        </ul>
+        <ul>
+            <li>Items can be returned within 30 days of purchase</li>
+        <li>Original packaging and receipt required</li>
+        </ul>
+        
+        <ul>
+            <li><h3>Do you offer technical support?</h3></li>
+        </ul>
+        <ul>
+            <li>Free technical support for all products for 1 year</li>
+            <li> Available Mon-Fri 9am-9pm EST</li>
+        </ul>
+        
+        <hr>
+
+        <h2 id="sl">Our Store Location</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941974409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1678880038067!5m2!1sen!2sca" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+
+        <h2 id="ci">Contact Information</h2>
+        <table border="1" width="100%">
+            <tr>
+                <th>Department</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>Customer Service</td>
+                <td>1-800-123-HELP</td>
+                <td>sevice@globalelectronic.com</td>
+                <td>Mon-Fri 8am-10pm EST</td>
+            </tr>
+            <tr>
+                <td>Technical Support</td>
+                <td>1-800-123-TECH</td>
+                <td>Support@globalelectronic.com</td>
+                <td>Mon-Fri 9am-9pm EST</td>
+            </tr>
+            <tr>
+                <td>Returns</td>
+                <td>1-800-123-RTRN</td>
+                <td>returns@globalelectronic.com</td>
+                <td>Mon-Fri 9am-6pm EST</td>
+            </tr>
+        </table>
+        <hr>
+        <p>&#169;2023 Global Electronics Store. All rights reserved</p>
+        <p>Privacy Policy | Terms of Service | Cookie Policy</p>
+
+
+</body> 
+</html>
