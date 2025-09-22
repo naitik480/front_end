@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employment Application Form</h1><br><br>
+    <p>Please complete  all sections of this form.Fields marked with*are required.</p>
+    <fieldset>
+        <legend><strong>Personal Information</strong></legend>
+        <label for="Title">Title</label>
+        <select id="Title" placeholder="PLease Select">
+            <opton value="Mr."></opton>
+            <opton value="Mrs."></opton>
+            <opton value=""></opton>
+        </select><br>
+        <label for="name">Full Name*:</label>
+        <input type="text" id="Full Name" ><br>
+        <label for="name">Last Name*:</label>
+        <input type="text" id="Last Name"><br>
+        <label for="email">Email Adress*:</label>
+        <input type="email" id="Email Adress*"><br>
+        <label for="tel">Phone Number*:</label>
+        <input type="number" id="phone" placeholder="123-45-678" pattern="[9,1]{2}-[0-9]{4}-[0-9]{6}"required><br>
+        <label for="Date of Birth">Date of Birth*:</label>
+        <input type="Date of Birth" id="Date of Birth"><br>
+        <label for="address">Address*:</label>
+        <textarea id="address" name="address" rows="4" cis="50"></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Employment Details</strong></legend>
+            <label for="Desired Position*:">Desired Position</label>
+            <select id="Desired Position">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+            <label for="salary">Expected Salary($):</label> 
+            <input type="number" id="Expected Salary"><br>
+            <label for="Date">Available Start Date*:</label>
+            <input type="Date" id="Available Start Date"><br>
+            
+            <label for="Employment type*:">Employment type*:</label>
+            <input type="radio" id="Full-time">
+            <label for="Full-time">Full-time</label>
+            <input type="radio" id="Part-time">
+            <label for="Part-time">Part-time</label>
+            <input type="radio" id="Contact">
+            <label for="Contact">Contact</label><br>
+            
+            
+            <label for="Remote work Option:">Remote work Option:</label>
+            <input type="checkbox" id="Open to remote work">
+            <label for="Open to remote work">Open to remote work</label>
+            <input type="checkbox" id="Interested in hybrid model">
+            <label for="Interested in hybrid model">Interested in hybrid model</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend><strong>Education History</strong></legend>
+            <tabel border="0px" width="100%">
+            <tr>
+            <th>Institution</th>
+            <th>Degree</th>
+            <th>Select</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Responsibilities</th>
+            </tr>
+            <tr>
+            <td><label for="Institution">Institution</label></td>
+            <td><input type="text" name="Institution"></td><br>
+            <input type="text" name="Institution"></td>
+            </tr>
+            <tr>
+            <th><label for="Degree">Degree</label></th>
+             <td><select id="select">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select></td>
+            </tr><br>
+            <tr><td><select id="select">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option></td>
+                </tr>
+            </select><br>
+            <label for="Start Date">Start Date</label>
+            <input type="Date" id="Start Date"><br>
+            <input type="Date" id="Start Date">
+
+            <label for="End Date">End Date</label>
+            <input type="Date" id="End Date"><br>
+            <input type="Date" id="End Date">
+            <label for="Responsibilities">Responsibilities</label>
+            <textarea id="Responsibilities" name="Responsibilities" rows="4" cis="50"></textarea><br>
+            <textarea id="Responsibilities" name="Responsibilities" rows="4" cis="50"></textarea>
+            </tabel>
+
+        </fieldset>
+
+</body>
+</html>
