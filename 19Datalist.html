@@ -18,109 +18,141 @@
     <p>Please help us improve our services by providing your feedback below:</p><br>
     
     <fieldset>
-        <legend>Personal Information</legend><br>
-        <tabel border="0" width="100%">
-        <form action="/submit" method="post">
+        <legend>Personal Information</legend>
+        <tabel  border="0"width="100%">
+            <tr>
+                 <td><label for="Full Name">Full Name:</label></td>
+                 <td><input type="text" id="Full Name"></td>
+            </tr>
             
             <tr>
-            <td><label for="Full Name">Full Name:</label></td>
-            <td><input type="text" id="Full Name"></td>
-            </tr><br>
-            <tr>
-            <td><label for="Email Adress">Email Adress:</label></td>
-            <td><input type="email" id="Email Adress"></td>
-            </tr><br><br>
-            <tr>
-            <td><label for="tel">Phone Number:</label></td>
-            <td><input type="number" id="phone" placeholder="123-45-678" pattern="[9,1]{2}-[0-9]{4}-[0-9]{6}"required></td>
-            </tr><br><br>
-            <tr>
-            <td><label for="customer type">Customer Type:</label></td>
-            <td><select id="Please Select">
-                <option value="New Customer">New Customer</option>
-                <option value="Returning Customer">Returning Customer</option>
-                <option value="Frequent Customer">Frequent Customer</option>
-            </select>
-            </td>
+                 <td><label for="Email Adress">Email Adress:</label></td>
+                 <td><input type="email" id="Email Adress"></td>
             </tr>
-        
-        </form>
+            
+            <tr>
+                  <td><label for="tel">Phone Number:</label></td>
+                  <td><input type="number" id="phone" placeholder="123-45-678" pattern="[9,1]{2}-[0-9]{4}-[0-9]{6}"required></td>
+            </tr>
+            
+            <tr>
+                  <td><label for="customer type">Customer Type:</label></td>
+                  <td><select id="customer type" name="Customer Type">
+                      <option value="New Customer">New Customer</option>
+                      <option value="Returning Customer">Returning Customer</option>
+                      <option value="Frequent Customer">Frequent Customer</option>
+                      </select>
+                  </td>
+            </tr>
         </tabel>
-        </fieldset><br><br>
+        </fieldset>
 
         <fieldset>
             <legend>Your Feedback</legend><br>
-            <tabel border="0" width="100%">
             <form action="/submit" method="post">
-                
-                <p1>How did you bear about us?</p1><br>
-                <input type="radio" id="Social Media">
-                <label for="Social Media">Social Media</label><br>
-                <input type="radio" id="Friend Family">
-                <label for="Friend Family">Friend Family</label><br>
-                <input type="radio" id="Search Engine">
-                <label for="Search Engine">Search Engine</label><br>
-                <input type="radio" id="other">
-                <label for="other">other</label><br><br>
+            <tabel border="0" width="100%">
 
-                <p1>Rate your experience</p1>
-                <input type="radio" id="Excellent">
-                <label for="Excellent">Excellent</label>
-                <input type="radio" id="Good">
-                <label for="Good">Good</label>
-                <input type="radio" id="Average">
-                <label for="Average">Average</label>
-                <input type="radio" id="Poor">
-                <label for="Poor">Poor</label><br><br>
-                
-                <p1>feedback Category</p1>
-                <select id="Please Select">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select><br><br>
-             
-            <label for="comment">Comments:</label>
-            <textarea id="Comment" name="comment" rows="4" cis="50" placeholder="Please Share Your feedbackn here "></textarea><br>
-            
-            <p>Would you recommend us?</p>
-            <input type="checkbox" id="Would you recommend us?" name="checkbox" value="Yes,I would recommend to others">
-            <label for="checkbox">Yes,I could recommend to us</label><br><br>
-            
+                <tr>
+                    <td ><label for="How did you bear about us?">How did you bear about us?</label></td>
+                </tr>
+                   <tr>
+                    <td><input type="radio" id="Social Media"></td>
+                    <td><label for="Social Media">Social Media</label></td>
+                <tr>
+                    <td><input type="radio" id="Friend Family"></td>
+                    <td><label for="Friend Family">Friend Family</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="Search Engine"></td>
+                    <td><label for="Search Engine">Search Engine</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="other"></td>
+                    <td><label for="other">other</label></td>
+                </tr>
+                <tr>
+                   <td><label for="Rate your experience">Rate your experience:</label></td>
+                </tr>
+                <tr>
+                   <td><input type="radio" id="Excellent"></td>
+                   <td><label for="Excellent">Excellent</label></td>
+                </tr>
+                <tr>
+                   <td><input type="radio" id="Good"></td>
+                   <td><label for="Good">Good</label></td>
+                </tr>
+                <tr>
+                   <td><input type="radio" id="Average"></td>
+                   <td><label for="Average">Average</label></td>
+                </tr>
+                <tr>
+                   <td><input type="radio" id="Poor"></td>
+                   <td><label for="Poor">Poor</label></td>
+                </tr>
+                <tr>
+                   <td><label for="feedback Category">feedback Category</label></td>
+                </tr>
+                <tr>
+                   <td><select id="feedback Category" name="Please Select"></td>
+                       <option value="Pricing">Pricing</option>
+                       <option value="Website Exprience">Website Exprience</option>
+                       <option value="Delivery Exprience">Delivery Exprience</option>
+                       <option value="Customer Service">Customer Service</option>
+                       <option value="Product Quality">Product Quality</option>
+                       </select>
+                    </td>
+                </tr>
+             <tr>
+                 <td><label for="comment">Comments:</label></td>
+                 <td><textarea id="Comment" name="comment" rows="4" cis="50" placeholder="Please Share Your feedbackn here "></textarea></td>
+            </tr>
+            <tr>
+                  <td><label for="Would you recommend us?">Would you recommend us?</label></td>
+            </tr>
+            <tr>
+                  <td><input type="checkbox" id="Would you recommend us?" name="checkbox" value="Yes,I would recommend to others"></td>
+                  <td><label for="checkbox">Yes,I could recommend to us</label></td>
+            </tr>
+            </tabel>
             <input type="submit" value="submit Feedback">
-            <input type="submit" value="clear Form">
+            <input type="reset" value="clear Form">
 
-             </form>
+            </form>
 
         </fieldset>
 
         <h2 id="faq">Frequently Asked Questions</h2>
         
         <ul>
-            <h3><li>How long does delivery take?</li></h3></ul>
+            <h3><li>How long does delivery take?</li></h3>
+        </ul>
+        <ul>
         <ul>
             <li>Standard delivery 3-5 business days</li>
             <li>Express delivery 1-2 business days</li>
         
         </ul>
+        </ul>
         
-        
-
         <ul>
             <li><h3>What is your return policy?</h3></li>
         </ul>
         <ul>
+
+        <ul>
             <li>Items can be returned within 30 days of purchase</li>
         <li>Original packaging and receipt required</li>
+        </ul>
         </ul>
         
         <ul>
             <li><h3>Do you offer technical support?</h3></li>
         </ul>
         <ul>
+        <ul>
             <li>Free technical support for all products for 1 year</li>
             <li> Available Mon-Fri 9am-9pm EST</li>
+        </ul>
         </ul>
         
         <hr>
