@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal css </title>
+    <style>
+        #Header{
+            background-color: rgb(118, 118, 245);
+            float: left;
+            width:100%;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        #nav{
+            float: left;
+            background-color: rgb(91, 107, 175);
+            width:94%;
+            margin: 0px 0px 20px 30px ;
+            padding: 10px;   
+        }
+        .btn{
+            float:left;
+            background-color: rgb(127, 127, 226);
+            margin-left: 12px ;
+            padding: 15px 0px 15px 0px ;
+            width: 24%;
+            text-align: center;           
+        }
+        #Content{
+            float:left;
+            background-color: aqua;
+            margin:20px 0px 0px 30px ;
+            width: 95.5%;
+            height: 330px;
+        }
+        #sidebar{
+            width: 20%;
+            height: 330px;
+            padding-left:12px;
+            float:left;
+            background-color: rgb(198, 248, 237); 
+        }
+        .line{
+            border: 1px solid rgb(58, 54, 54);
+            width: 86%;
+        }
+        #Main{
+            float: left;
+            background-color: #eed8e9;
+            width: 78.05%;
+            padding-left: 13px;
+            height: 330px;  
+        }
+        #FC1{
+            width: 38%;
+            background-color: #c498c4;
+            padding-left: 15px;
+            margin-top: 50px;
+            height: 160px;
+            float: left;   
+        }
+        #FC2{
+            width: 50%;
+            background-color: #dfa1d9;
+            padding-left: 15px;
+            float: left;
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        #AFL{
+            float: left;
+            margin-top: 20px;
+            width: 94.3%;
+            margin-left: 30px;
+            padding-left: 15px;
+            background-color: #f7db81;
+        }
+        #Footer{
+            background-color: #7fb6f5;
+            text-align: center;
+            color: white;
+            float: left;
+            width: 100%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Header" >
+        <h1>Float-Based Web Layout</h1>
+        <div id="nav">
+            <div class="btn" style="margin-left:2px ;">Home</div>
+            <div class="btn">About</div>
+            <div class="btn">Services</div>
+            <div class="btn">Contact</div>
+        </div>
+    </div>
+    <div id="Content">
+            <div id="sidebar">
+                <h4>Sidebar</h4>
+                <p>Menu Item 1</p>
+                <div class="line"></div>
+                <p>Menu Item 2</p>
+                <div class="line"></div>
+                <p>Menu Item 3</p>
+                <div class="line"></div>
+                <p>Menu Item 4</p>
+                <div class="line"></div>
+                <p>Menu Item 5</p>
+               <br>
+            </div>
+            <div id="Main">
+                <h3>Main Content Area </h3>
+                <p>The layout is created using css float properties. The sidebar is floated-left,and the main content is floated right.</p>       
+            <div id="FC1">
+                <h4>Float Column 1</h4>
+                <p>This column is float left.Float was <br>commonly used for layouts before <br>firefox and CSS Grid.</p>
+            </div>
+            <div id="FC2">
+                <h4>Float Column 2</h4>
+                <p>This Columnb is also Floated left. Usiong Float for layout requires Carefully clearing of floats.</p><br>
+            </div>
+         </div>
+    </div>
+    <div id="AFL">
+        <h3>About Float Layout</h3>
+        <p>Css float is a property that positions an element to the left or right of its container allowing text and inline elements to wrap around <br>it.</p>
+        <p>While float is still useful for wrapping text around images.It's no longer the prefered method for creating complex page layouts. </p>
+    </div>  
+    <div id="Footer">@2023 Float Layout Example.All rights reserved.</div>
+</body>
+</html>
