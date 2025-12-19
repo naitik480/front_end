@@ -10,7 +10,7 @@
      alert("odd");
       document.writeln("odd");
        }
-    } 
+} 
     
     function grade(){
          
@@ -37,8 +37,33 @@
         }
 
 
-    }
+}
 
+     function largestno(){
+
+        let x =prompt("enter a 1st number");
+ let num1=Number(x);
+
+ let y=prompt("enter a 2nd number");
+ let num2=Number(y);
+
+ let z =prompt("enter a 3rd number");
+ let num3=Number(z);
+
+ if(num1>num2 && num1>num3){
+ largest='num1';
+
+ }else if(num2>num1 && num2>num3){
+ largest='num2';
+
+ }else if(num3>num1 && num3>num2){
+ largest='num3';
+
+ }alert("largest:"+largest);{
+  document.writeln("largest:"+largest);  
+ }
+
+}
     
     
          
