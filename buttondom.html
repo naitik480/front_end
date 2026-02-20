@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="c" placeholder="enter celcius">
+    <input type="text"  id="f" placeholder="enter farenheit">
+
+     <button onclick="celciustof()">Farenheit</button>
+    <button onclick="farenheitoc()">celcius</button>
+
+    <script>
+       function celciustof(){
+       let x=document.getElementById('c');
+      let y=document.getElementById('f');
+      
+       console.log(x.value);
+    y.value=(x.value*9/5)+32
+    
+    }
+
+function farenheitoc(){
+       let y=document.getElementById('f');
+      let x=document.getElementById('c');
+      
+       console.log(y.value);
+    x.value=(y.value*9/5)-32
+    
+    }
+
+</script>
+
+
+   
+
+</body>
+</html>
