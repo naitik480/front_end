@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do</title>
+</head>
+<body>
+    <h1>To-Do list</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter new task">
+    <button onclick="addTask()">Add Task</button>
+    <ol id="taskList">
+
+    </ol>
+
+    <script>
+        function addCheckboxEvent(checkbox) {
+            checkbox.addEventListener("change", function () { 
+                let text = this.nextElementSibling;
+                if (this.checked) {
+                    text.style.textDecoration = "line-through";
+                } 
+                else {
+                    text.style.textDecoration = "none";
+                }
+            });
+        }
+
+       function deleteTask(button) {
+    button.parentElement.remove();
+}
+
+        
+        function addTask() {
+            let input = document.getElementById("taskInput");
+            let task = input.value;
+
+            if (task === "") {
+                alert("Enter a task");
+                return;
+            }
+
+            let li = document.createElement("li");
+
+            let checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            
+            let span = document.createElement("span");
+            span.textContent = task;
+            
+            let deleteBtn = document.createElement("button");
+            deleteBtn.className = "delete-btn";
+            deleteBtn.innerHTML = "🗑️"; 
+           
+            deleteBtn.onclick = function() { deleteTask(this); }
+            addCheckboxEvent(checkbox);
+            li.appendChild(checkbox);
+            li.appendChild(span);
+            li.appendChild(deleteBtn);
+
+            document.getElementById("taskList").appendChild(li);
+            input.value = "";
+
+             }  
+    </script>
+</body>
+</html>
