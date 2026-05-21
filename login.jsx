@@ -10,11 +10,13 @@ const Login =() =>{
 
         <Card id='Login'>
 
+    
+
             <header id='x'>Login</header>
 
        
-       <Input type='text' text="Username"/>
-        <Input type='password' text="password"/>
+       <Input type='text' text="👤Username"/>
+        <Input type='password' text="🔒password"/>
         <Input type='checkbox'/>
         <para id='a'>Remember me</para>
       
@@ -24,7 +26,7 @@ const Login =() =>{
        
        
 
-        <para id='b'>Forgot Username/Password</para>
+        <para id='b'><a href=''>Forgot Username/Password?</a></para>
 
 
 
