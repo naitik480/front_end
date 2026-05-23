@@ -1,0 +1,39 @@
+#card1{
+   width: 280px;
+     height:200px;
+  margin: 0 auto;
+  padding: 24px 24px;
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  --border: #c2bebe;
+  background-color:rgb(172, 157, 201);
+  box-shadow: 0 14px 28px rgba(121, 155, 233, 0.08);
+  margin-top: 60px;
+  opacity: 1;
+
+}
+
+#tc{
+
+  margin: 20 20;
+  padding: 24px 24px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:antiquewhite;
+  font-size:larger;
+  font-weight:bolder;
+
+
+}
+
+#cc{
+
+ margin-top: 5%;
+  margin-left: 15%;
+ 
+}
+
+#fc{
+   margin-top: 5%;
+  margin-left: 15%;
+}
